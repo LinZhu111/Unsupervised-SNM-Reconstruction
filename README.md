@@ -19,7 +19,6 @@
 * Brian2 (2.2.2.1 recommended)
 * Matlab (2018a recommended)
 
-```
 
 ## Folder Structure
   ```
