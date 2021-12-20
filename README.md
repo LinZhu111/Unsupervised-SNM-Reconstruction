@@ -1,5 +1,5 @@
 # Unsupervised Spiking Neuron Model (SNM) for spike-based reconstruction
-
+Demo code for paper Retina-like Visual Image Reconstruction via Spiking Neural Model. CVPR2020
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
 <!-- code_chunk_output -->
