@@ -43,7 +43,7 @@
 ## Network
 The code in this repo is an SNM example, we provide following implementation：
 
-![Spiking Neural Model](https://github.com/Crazyspike/snnrec/blob/master/snn_simple.png?raw=true)
+![Spiking Neural Model](https://github.com/LinZhu111/Fast-SNM-Reconstruction/blob/main/02783.jpg?raw=true)
 
 ## Usage
 
