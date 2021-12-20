@@ -24,7 +24,7 @@ Demo code for paper Retina-like Visual Image Reconstruction via Spiking Neural M
   ```
   Unsupervised-SNM-Reconstruction/
   │
-  ├── rec.py - evaluation of the model
+  ├── rec——main.py - evaluation of the model
   │
   ├── motioncut.m - matlab interface for motion cut
   │
@@ -47,7 +47,7 @@ The code in this repo is an SNM example, we provide following implementation：
 
 ## Usage
 
-try `python rec.py -model Spike_Unet_noBN -weight_path /path_to_weight/Spike_Unet_model_simple_noBN-0090.pth -data_path /path_to_data/data.dat -save_path /path_to_save/ -start_time 300 -duration_time 8` to run code.
+try `python rec_main.py -i path_to_dat_files -m camera_moving -t 200 -o path_to_save_data` to run code.
 
 ## Dataset
 The testing dataset is available at
