@@ -22,7 +22,7 @@
 
 ## Folder Structure
   ```
-  pytorch-SNNrec/
+  Unsupervised-SNM-Reconstruction/
   │
   ├── rec.py - evaluation of the model
   │
