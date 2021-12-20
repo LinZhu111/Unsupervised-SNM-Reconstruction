@@ -113,73 +113,7 @@ class UnsupervisedSNM:
         output[output<0.1] = 0
         #np.save('output-%s-%sus.npy'%(file_name,int(input_time/us)),output)
         return output
-
-    def dynamic_spike_refining(self, a, b, c, t, i, j):
-        itv = b
-        f = 3
-        openflag = 0
-        if a < b - 1 and b - 1 > c and openflag == 1:
-            tl = min(f*a/b,b/4)
-            tr = min(f*c/b,b/4)
-            te = b - tl -tr
-            t_beforeitv = tl
-            if t <= tl:
-                if self.last_change[i*self.width+j] > 0:
-                    itv = self.last_change[i*self.width+j]
-                else:
-                    itv = a
-            elif t > b - tr:
-                itv = c
-            else:
-                if a*c - c*tl - a*tr == 0:
-                    itv = a*c*te
-                else:
-                    itv = a*c*te/(a*c - c*tl - a*tr)
-        elif a > b + 1 and b + 1 < c and openflag == 1:
-            tl = min(f*a/b,b/4)
-            tr = min(f*c/b,b/4)
-            te = b - tl -tr
-            t_beforeitv = tl
-            if t <= tl:
-                if self.last_change[i*self.width+j] > 0:
-                    itv = self.last_change[i*self.width+j]
-                else:
-                    itv = a
-            elif t > b - tr:
-                itv = c
-            else:
-                if a*c - c*tl - a*tr == 0:
-                    itv = a*c*te
-                else:
-                    itv = a*c*te/(a*c - c*tl - a*tr)
-        elif (a > b+1 and b > c+1) or (a+1 < b and b+1 < c):
-            tm = a*(c-b)/(c-a)
-            #te = min(tm,b-tm)
-            te = 0
-            tl = tm - te/2
-            tr = b - tm - te/2
-            t_beforeitv = tl
-            if t <= tl:
-                if self.last_change[i*self.width+j] > 0:
-                    itv = self.last_change[i*self.width+j]
-                else:
-                    itv = a
-            elif t > b - tr:
-                itv = c
-            else:
-                if a*c - c*tl - a*tr == 0:
-                    itv = a*c*te
-                else:
-                    itv = a*c*te/(a*c - c*tl - a*tr)
-        else:
-            self.last_change[i*self.width+j] = 0
-            # if abs(a-b)<3 and abs(b-c)<3:
-            #     itv = ((a+b+c)/3)
-            # else:
-            itv = b
-            t_beforeitv = 0
-        return abs(itv), t_beforeitv
-
+    
     def dynamic_spike_refining_v2(self, a, b, c, t, i, j):
         itv = b
         f = 1
