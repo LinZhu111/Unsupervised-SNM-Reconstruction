@@ -4,7 +4,7 @@
 
 <!-- code_chunk_output -->
 
-* [SNN-rec](#snn-rec)
+* [SNM-rec](#snm-rec)
 	* [Requirements](#requirements)
 	* [Folder Structure](#folder-structure)
 	* [Network](#network)
