@@ -1,5 +1,6 @@
 # Unsupervised Spiking Neuron Model (SNM) for spike-based reconstruction
-Demo code for paper Retina-like Visual Image Reconstruction via Spiking Neural Model. CVPR2020
+Demo code of Unsupervised Spiking Neuron Model (SNM) for spike-based reconstruction
+
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
 <!-- code_chunk_output -->
@@ -52,5 +53,11 @@ try `python rec_main.py -i path_to_dat_files -m camera_moving -t 200 -o path_to_
 ## Dataset
 The testing dataset is available at
 - [PKU-Spike-Recon Dataset](https://www.pkuml.org/resources/pku-spike-recon-dataset.html)
+
+## Citation
+If you find DenseNet useful in your research, please consider citing:
+Ultra-high Temporal Resolution Visual Reconstruction from a Fovea-like Spike Camera via Spiking Neuron Model. TPAMI 2022
+Retina-like Visual Image Reconstruction via Spiking Neural Model. CVPR2020
+
 ## License
 This project is licensed under the MIT License. See  LICENSE for more details
