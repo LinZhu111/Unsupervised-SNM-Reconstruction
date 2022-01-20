@@ -53,7 +53,8 @@ if __name__ == '__main__':
     parser.add_argument('-i', '--input_file',  type=str,
                         help='path to dat files')
     parser.add_argument('-m', '--recon_mode', type=str, default='camera_moving',
-                        help='reconstruction mode: camera_moving, camera_fix_1, or camera_fix_2')
+                        help='reconstruction mode: camera_moving, camera_fix_1, or camera_fix_2.\
+                        `camera_moving` mode is suitable for scenes, `camera_fix_1, camera_fix_2` are more suitbale for fixed camera scenes.')
     parser.add_argument('-t', '--recon_time', type=int, default=200,
                         help='reconstruction time t, will reconstrut every moment if t set t as 0')
     parser.add_argument('-o', '--save_path',  type=str, default='./',
