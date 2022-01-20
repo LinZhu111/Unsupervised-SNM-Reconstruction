@@ -56,7 +56,9 @@ The testing dataset is available at
 
 ## Citation
 If you find DenseNet useful in your research, please consider citing:
+
 Ultra-high Temporal Resolution Visual Reconstruction from a Fovea-like Spike Camera via Spiking Neuron Model. TPAMI 2022
+
 Retina-like Visual Image Reconstruction via Spiking Neural Model. CVPR2020
 
 ## License
