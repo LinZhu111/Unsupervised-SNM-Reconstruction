@@ -109,7 +109,6 @@ def save_fig(img_mat, folder, prefix, file_name, t, recon_mode):
 
     maxvalue = np.max(img_mat)
     img_mat = img_mat/maxvalue
-    maxvalue = np.max(img_mat)
     
     total_iter = 3
     filteredimg = 255*img_mat
